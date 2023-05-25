@@ -1,0 +1,63 @@
+/**/
+
+body{
+    display:grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+    ". maindisp ."
+}
+
+#maindisp{
+    display: grid;
+    grid-area: maindisp;
+    border-style: solid;
+    border-color: rgb(94, 94, 94);
+    border-width:3px;
+    background-color:darkgray;
+    width:180px;
+    height:148px;
+    align-content:center;
+    justify-content:center;
+    border-radius:5px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#maindisptoplights{
+    position:absolute;
+    width:inherit;
+    height:25px;
+    text-align:center;
+}
+
+#mdrl1, #mdrl2{
+    margin-top: 8px;
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background-color:red;
+    border-radius:10px;
+}
+
+#mdrl2{
+    margin-left:30px;
+}
+
+#maindispscreen{
+    display:grid;
+    background-color:rgb(120, 143, 120);
+    border-style: solid;
+    border-width: 3px;
+    border-color:rgb(70, 82, 70);
+    width: 128px;
+    height: 96px;
+    align-content:center;
+    justify-content:center;
+    border-radius:5px;
+}
+
+#pokepic{
+    width:192px;
+    height:192px;
+}
