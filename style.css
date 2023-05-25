@@ -1,16 +1,31 @@
 /**/
 
 body{
-    display:grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
-    grid-template-areas:
-    ". maindisp ."
+display:grid;
 }
+
+#rightredplate{
+    display:grid;
+    grid-area: rrp;
+    background-color: red;
+    justify-items:center;
+    align-items:center;
+    border-style:solid;
+    border-width:3px;
+    border-color:darkred;
+    width: 240px;
+    height: 360px;
+}
+
+.line{
+    width: calc(300px*1.41);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    transform: rotate(45deg);
+    transform-origin: left;
+    }
 
 #maindisp{
     display: grid;
-    grid-area: maindisp;
     border-style: solid;
     border-color: rgb(94, 94, 94);
     border-width:3px;
@@ -60,4 +75,32 @@ body{
 #pokepic{
     width:192px;
     height:192px;
+}
+
+#maindispbottom{
+    margin-top:124px;
+    position:absolute;
+    width:inherit;
+    height:25px;
+    text-align: center;
+}
+
+#mdbrl{
+        display:inline-block;
+        margin-bottom:4px;
+        width:10px;
+        height:10px;
+        background-color:red;
+        border-radius:10px;
+}
+
+#mdhzl{
+    margin-top:2px;
+    margin-left:100px;
+    width:20px;
+    display: inline-block;
+}
+
+hr{
+    margin:3px;
 }
