@@ -8,23 +8,70 @@ display:grid;
     display:grid;
     grid-area: rrp;
     background-color: red;
-    justify-items:center;
-    align-items:center;
     border-style:solid;
     border-width:3px;
     border-color:darkred;
     width: 240px;
-    height: 360px;
+    height: 340px;
 }
 
-.line{
-    width: calc(300px*1.41);
-    border-bottom: 3px solid rgb(1, 68, 12);
-    transform: rotate(45deg);
-    transform-origin: left;
-    }
+#rightredplateupper{
+    display:flex;
+    position:absolute;
+    height:70px;
+    width:inherit;
+    border-bottom-style:solid;
+    border-bottom-width:4px;
+    border-color:darkred;
+
+}
+
+#morelights{
+    margin-top:10px;
+    margin-left:10px;
+    display:flex;
+    justify-content: space-between;
+    width:35px;
+    height:50px;
+}
+
+#ml1,#ml2,#ml3{
+    width:8px;
+    height:8px;
+    border-radius:6px;
+    border-style:solid;
+    border-width:1px;
+}
+#ml1{
+    background-color: red;
+    border-color:darkred;
+}
+#ml2{
+    background-color: yellow;
+    border-color:darkred;
+}
+#ml3{
+    background-color: green;
+    border-color:darkred;
+}
+
+#bigbluelight{
+    display:inline-block;
+    margin-top:10px;
+    margin-left:25px;
+    background-color: deepskyblue;
+    border-style:double;
+    border-color:darkblue;
+    border-width:5px;
+    width:35px;
+    height:35px;
+    border-radius:30px;
+}
+
 
 #maindisp{
+    justify-self:center;
+    align-self:center;
     display: grid;
     border-style: solid;
     border-color: rgb(94, 94, 94);
@@ -49,14 +96,17 @@ display:grid;
 #mdrl1, #mdrl2{
     margin-top: 8px;
     display:inline-block;
-    width:10px;
-    height:10px;
+    width:5px;
+    height: 5px;px;
     background-color:red;
-    border-radius:10px;
+    border-radius:5px;
+    border-style:solid;
+    border-width:1px;
+    border-color:darkred;
 }
 
 #mdrl2{
-    margin-left:30px;
+    margin-left:20px;
 }
 
 #maindispscreen{
@@ -92,6 +142,9 @@ display:grid;
         height:10px;
         background-color:red;
         border-radius:10px;
+        border-style:solid;
+        border-width:1px;
+        border-color:darkred;
 }
 
 #mdhzl{
