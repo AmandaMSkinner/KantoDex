@@ -12,18 +12,42 @@
 }
 
 #left-upper{
+    width:240px;
     grid-area:lu;
     border-style:solid;
+
 }
 #left-lower{
-    grid-area:ll;
     border-style:solid;
 }
+
+#left-screen{
+    height:198px;
+}
+#button-box{
+    height:100px;
+}
+
 #right-upper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:72px;
+    width:240px;
     grid-area:ru;
     border-style:solid;
 }
+
 #right-lower{
     grid-area:rl;
     border-style:solid;
+}
+#right-screen{
+    height:100px;
+}
+#button-panel{
+    height:100px;
+}
+#misc-button-box{
+    height:98px;
 }
