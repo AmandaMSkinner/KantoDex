@@ -1,159 +1,29 @@
-/**/
-
-body{
-display:grid;
-}
-
-#rightredplate{
+#kantodex{
+    width:480px;
+    height:360px;
     display:grid;
-    grid-area: rrp;
-    background-color: red;
+    grid-template-rows: 1fr,1fr;
+    grid-template-areas:
+    "lu ru"
+    "ll rl"
+    "ll rl"
+    "ll rl";
     border-style:solid;
-    border-width:3px;
-    border-color:darkred;
-    width: 240px;
-    height: 340px;
 }
 
-#rightredplateupper{
-    display:flex;
-    position:absolute;
-    height:70px;
-    width:inherit;
-    border-bottom-style:solid;
-    border-bottom-width:4px;
-    border-color:darkred;
-
-}
-
-#morelights{
-    margin-top:10px;
-    margin-left:10px;
-    display:flex;
-    justify-content: space-between;
-    width:35px;
-    height:50px;
-}
-
-#ml1,#ml2,#ml3{
-    width:8px;
-    height:8px;
-    border-radius:6px;
+#left-upper{
+    grid-area:lu;
     border-style:solid;
-    border-width:1px;
 }
-#ml1{
-    background-color: red;
-    border-color:darkred;
-}
-#ml2{
-    background-color: yellow;
-    border-color:darkred;
-}
-#ml3{
-    background-color: green;
-    border-color:darkred;
-}
-
-#bigbluelight{
-    display:inline-block;
-    margin-top:10px;
-    margin-left:25px;
-    background-color: deepskyblue;
-    border-style:double;
-    border-color:darkblue;
-    border-width:5px;
-    width:35px;
-    height:35px;
-    border-radius:30px;
-}
-
-
-#maindisp{
-    justify-self:center;
-    align-self:center;
-    display: grid;
-    border-style: solid;
-    border-color: rgb(94, 94, 94);
-    border-width:3px;
-    background-color:darkgray;
-    width:180px;
-    height:148px;
-    align-content:center;
-    justify-content:center;
-    border-radius:5px;
-    border-bottom-left-radius: 25px;
-}
-
-
-#maindisptoplights{
-    position:absolute;
-    width:inherit;
-    height:25px;
-    text-align:center;
-}
-
-#mdrl1, #mdrl2{
-    margin-top: 8px;
-    display:inline-block;
-    width:5px;
-    height: 5px;px;
-    background-color:red;
-    border-radius:5px;
+#left-lower{
+    grid-area:ll;
     border-style:solid;
-    border-width:1px;
-    border-color:darkred;
 }
-
-#mdrl2{
-    margin-left:20px;
+#right-upper{
+    grid-area:ru;
+    border-style:solid;
 }
-
-#maindispscreen{
-    display:grid;
-    background-color:rgb(120, 143, 120);
-    border-style: solid;
-    border-width: 3px;
-    border-color:rgb(70, 82, 70);
-    width: 128px;
-    height: 96px;
-    align-content:center;
-    justify-content:center;
-    border-radius:5px;
-}
-
-#pokepic{
-    width:192px;
-    height:192px;
-}
-
-#maindispbottom{
-    margin-top:124px;
-    position:absolute;
-    width:inherit;
-    height:25px;
-    text-align: center;
-}
-
-#mdbrl{
-        display:inline-block;
-        margin-bottom:4px;
-        width:10px;
-        height:10px;
-        background-color:red;
-        border-radius:10px;
-        border-style:solid;
-        border-width:1px;
-        border-color:darkred;
-}
-
-#mdhzl{
-    margin-top:2px;
-    margin-left:100px;
-    width:20px;
-    display: inline-block;
-}
-
-hr{
-    margin:3px;
+#right-lower{
+    grid-area:rl;
+    border-style:solid;
 }
