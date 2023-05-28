@@ -22,6 +22,7 @@
 
 }
 #left-lower{
+    grid-area:ll;
     border-style:solid;
     border-color:darkred;
     background-color: red;
@@ -48,6 +49,11 @@
 #right-lower{
     grid-area:rl;
     border-style:solid;
+    border-color:darkred;
+    background-color: red;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
 #right-screen{
     height:100px;
