@@ -82,18 +82,20 @@
     justify-items: center;
     height:96px;
     width:140px;
-    background-color: green;
+    background-color: rgb(115, 196, 165);
     border-style:outset;
     border-color:lightgray;
     border-width:20px;
 }
 
+
 #pkmn-disp img{
-    background-color: none;
-    object-fit: none;
+    object-fit:none;
+    scale: 200%;
     height:48px;
     width:48px;
 }
+
 
 #button-box{
     height:100px;
