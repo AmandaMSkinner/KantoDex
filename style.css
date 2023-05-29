@@ -70,8 +70,31 @@
 }
 
 #left-screen{
+    display:grid;
+    align-items: center;
+    justify-items: center;
     height:198px;
 }
+
+#pkmn-disp{
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    height:96px;
+    width:140px;
+    background-color: green;
+    border-style:outset;
+    border-color:lightgray;
+    border-width:20px;
+}
+
+#pkmn-disp img{
+    background-color: none;
+    object-fit: none;
+    height:48px;
+    width:48px;
+}
+
 #button-box{
     height:100px;
 }
