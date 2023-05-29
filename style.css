@@ -11,6 +11,7 @@
 }
 
 #left-upper{
+    display:flex;
     width:240px;
     grid-area:lu;
     border-style:solid;
@@ -26,11 +27,37 @@
     width:40px;
     background-image: radial-gradient(rgb(0, 183, 255), rgb(0, 174, 255), rgb(19, 0, 128));
     border-radius:40px;
-    border-style:solid;
+    border-style:inset;
     border-width:8px;
     border-color:lightgray;
     margin-top:6px;
     margin-left:6px;
+}
+
+.smlt{
+    height:10px;
+    width:10px;
+    background-color: black;
+    border-radius:10px;
+    margin-left:5px;
+    margin-top:6px;
+    border-style:inset;
+    border-width:4px;
+}
+
+#small-light1{
+    background-image: radial-gradient(red, rgb(114, 2, 2));
+    border-color:lightgray;
+}
+
+#small-light2{
+    background-image: radial-gradient(yellow, rgb(151, 151, 0));
+    border-color:lightgray;
+}
+
+#small-light3{
+    background-image: radial-gradient(rgb(0, 197, 0), rgb(0, 53, 0));
+    border-color:lightgray;
 }
 
 #left-lower{
