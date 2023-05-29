@@ -78,8 +78,6 @@
 
 #pkmn-disp{
     display:grid;
-    align-items: center;
-    justify-items: center;
     height:96px;
     width:140px;
     background-color: rgb(115, 196, 165);
@@ -88,8 +86,29 @@
     border-width:20px;
 }
 
+#disp-lights{
+    display:flex;
+    justify-self:center;
+    margin-top:-14px;
+}
+
+#dl1, #dl2{
+    height:8px;
+    width:8px;
+    border-radius:8px;
+    background-image: radial-gradient(red, rgb(114, 2, 2));
+    border-width:2px;
+    border-color:gray;
+    border-style:ridge;
+}
+#dl2{
+    margin-left:30px;
+}
 
 #pkmn-disp img{
+    align-self: center;
+    justify-self:center;
+    position:absolute;
     object-fit:none;
     scale: 200%;
     height:48px;
