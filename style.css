@@ -104,6 +104,18 @@
 #dl2{
     margin-left:30px;
 }
+#dl3{
+    margin-bottom:-17px;
+    align-self:end;
+    position:absolute;
+    height:12px;
+    width:12px;
+    border-radius:12px;
+    background-image: radial-gradient(red, rgb(114, 2, 2));
+    border-width:2px;
+    border-color:lightgray;
+    border-style:groove;
+}
 
 #pkmn-disp img{
     align-self: center;
