@@ -1,3 +1,8 @@
+#body{
+    display:grid;
+    place-items:center;
+}
+
 #kantodex{
     width:480px;
     height:360px;
@@ -8,6 +13,13 @@
     "ll rl"
     "ll rl"
     "ll rl";
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
 }
 
 #left-upper{
