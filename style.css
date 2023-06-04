@@ -323,10 +323,6 @@
     border-style:outset;
 }
 
-#misc-button-box{
-    height:98px;
-}
-
 #b1{
     border-top-left-radius: 5px;
 }
@@ -337,5 +333,33 @@
     border-bottom-left-radius:5px;
 }
 #b4{
+    border-bottom-right-radius:5px;
+}
+
+#misc-button-box{
+    height:98px;
+}
+
+
+#gray-btns{
+    font-size:0px;
+    margin-left:24px;
+}
+
+#gray-btns button{
+    background-color: lightgray;
+    border-color:darkslategray;
+    margin-top:0px;
+    height:25px;
+    width:37px;
+    border-width:3px;
+    border-style:outset;
+}
+#gb1{
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+#gb2{
+    border-top-right-radius:5px;
     border-bottom-right-radius:5px;
 }
