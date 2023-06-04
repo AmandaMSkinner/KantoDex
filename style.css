@@ -337,7 +337,7 @@
 }
 
 #misc-button-box{
-    height:98px;
+    height:50px;
 }
 
 
@@ -374,4 +374,21 @@
     border-style:inset;
     border-width:3px;
     border-color:lightgray;
+}
+
+#dk-gray-btns{
+    display:flex;
+    margin-left:25px;
+    margin-right:25px;
+    justify-content:space-between
+}
+
+#dk-gray-btns button{
+    width:80px;
+    height:35px;
+    border-color:black;
+    background-color:darkslategray;
+    border-radius:5px;
+    border-width:3px;
+    border-style:outset;
 }
