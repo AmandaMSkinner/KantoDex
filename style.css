@@ -1,9 +1,21 @@
-#body{
-    display:grid;
-    place-items:center;
+body{
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(200, 250, 248, 0.7), 
+      rgba(200, 250, 248, 0.7)
+    ),
+    /* your image */
+    url(images/ViridianCity.png);
 }
 
 #kantodex{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     width:480px;
     height:360px;
     display:grid;
@@ -13,13 +25,6 @@
     "ll rl"
     "ll rl"
     "ll rl";
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    margin: auto;
 }
 
 #left-upper{
