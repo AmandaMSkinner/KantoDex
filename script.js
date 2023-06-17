@@ -15,6 +15,7 @@ https://pokeapi.co/api/v2/pokemon-form/{id}/
 */
 
 let id = 001;
+let PKMNname ="";
 
 let fetchResponse;
 
@@ -23,6 +24,7 @@ function pokeFetch(id){
         .then((response) => response.json())
         .then(data => {
             fetchResponse = data;
+            PKMNname=fetchResponse.name;//Grabbing the pokemon's name!
            })
         .then(() => console.log(fetchResponse));
 }
