@@ -15,8 +15,6 @@ https://pokeapi.co/api/v2/pokemon-form/{id}/
 */
 
 let id = 001;
-let PKMNname ="";
-
 let fetchResponse;
 
 function pokeFetch(id){
@@ -24,11 +22,33 @@ function pokeFetch(id){
         .then((response) => response.json())
         .then(data => {
             fetchResponse = data;
-            PKMNname=fetchResponse.name;//Grabbing the pokemon's name!
+            let PKMNname = document.getElementById("name-screen");
+            let NameByID = fetchResponse.name;//Grabbing the pokemon's name!
+            PKMNname.innerHTML="#"+id.toString().padStart(3,0)+"<br/>"+NameByID;
            })
         .then(() => console.log(fetchResponse));
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
-    pokeFetch(001);
+    //Preparing the Buttons
+    const d_right=document.getElementById("cp-right");
+    const d_left=document.getElementById("cp-left");
+    //Preloading the first pokemon
+    pokeFetch(id);
+    //Event Handlers
+        //directional pad
+        d_right.addEventListener("click",()=>{
+            id=(id+1);
+            if(id==152){
+                id=1;
+            }
+            pokeFetch(id);
+        });
+        d_left.addEventListener("click",()=>{
+            id=(id-1);
+            if(id==0){
+                id=151;
+            }
+            pokeFetch(id);
+        });
 });
