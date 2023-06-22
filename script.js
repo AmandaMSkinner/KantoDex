@@ -30,6 +30,10 @@ function pokeFetch(id){
             const sprite=document.getElementById("front-sprite");
             sprite.src = PKMNimg;
 
+            let audioLocation = "soundcries\\"+id.toString().padStart(3,0)+".wav"
+            const PKMNcry = new Audio(audioLocation);
+            PKMNcry.play();
+
            })
         fetch("https://pokeapi.co/api/v2/pokemon-species/"+id)
         .then((response) => response.json())
@@ -43,9 +47,7 @@ function pokeFetch(id){
             }
             let FlavorByID = fetchResponse.flavor_text_entries[languageID].flavor_text;
             FlavorByID = FlavorByID.toString().replace("","\n");
-            console.log(Language);
             PKMNflavortext.innerText=FlavorByID;
-            console.log(FlavorByID);
            })
         .then(() => console.log(fetchResponse));
 }
