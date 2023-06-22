@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     //Preparing the Buttons
     const d_right=document.getElementById("cp-right");
     const d_left=document.getElementById("cp-left");
-
+    const d_up=document.getElementById("cp-up");
+    const d_down=document.getElementById("cp-down");
     //Preparing the sprite screen
     //Preloading the first pokemon
     pokeFetch(id);
@@ -55,6 +56,20 @@ document.addEventListener('DOMContentLoaded',()=>{
             id=(id-1);
             if(id==0){
                 id=151;
+            }
+            pokeFetch(id);
+        });
+        d_up.addEventListener("click",()=>{
+            id=(id+10);
+            if(id>=152){
+                id=id%152+1;
+            }
+            pokeFetch(id);
+        });
+        d_down.addEventListener("click",()=>{
+            id=(id-10);
+            if(id<=0){
+                id=152+id-1;
             }
             pokeFetch(id);
         });
