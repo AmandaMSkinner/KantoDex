@@ -24,7 +24,12 @@ function pokeFetch(id){
             fetchResponse = data;
             let PKMNname = document.getElementById("name-screen");
             let NameByID = fetchResponse.name;//Grabbing the pokemon's name!
+            let PKMNimg = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-i/red-blue/transparent/"+id+".png";
             PKMNname.innerHTML="#"+id.toString().padStart(3,0)+"<br/>"+NameByID;
+
+            const sprite=document.getElementById("front-sprite");
+            sprite.src = PKMNimg;
+
            })
         .then(() => console.log(fetchResponse));
 }
@@ -33,6 +38,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     //Preparing the Buttons
     const d_right=document.getElementById("cp-right");
     const d_left=document.getElementById("cp-left");
+
+    //Preparing the sprite screen
     //Preloading the first pokemon
     pokeFetch(id);
     //Event Handlers
