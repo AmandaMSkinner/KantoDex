@@ -42,6 +42,7 @@ function pokeFetch(id){
                 languageID=2;
             }
             let FlavorByID = fetchResponse.flavor_text_entries[languageID].flavor_text;
+            FlavorByID = FlavorByID.toString().replace("","\n");
             console.log(Language);
             PKMNflavortext.innerText=FlavorByID;
             console.log(FlavorByID);

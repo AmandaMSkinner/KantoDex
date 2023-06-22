@@ -288,13 +288,13 @@ body{
 }
 
 #right-screen{
-        display:flex;
-        align-items:center;
+        display: content;
+        padding-top: 10px;
         font-family: 'Silkscreen', sans-serif;
         text-align:center;
         font-size:10px;
-        width:180px;
-        height:80px;
+        width:185px;
+        height:70px;
         background-color:rgb(115, 196, 165);
         border-style:inset;
         border-color:green;
